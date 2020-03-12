@@ -1,0 +1,4 @@
+* [{{.DataBase}}]({{.DataBase}}/{{.CoverTable}}.md)
+    {{- range $table := .Tables}}
+    * [{{$table}}]({{$.DataBase}}/{{$table}}.md)
+    {{- end}}

@@ -1,0 +1,7 @@
+.idea
+.vscode
+.DS_Store
+*.swap
+*.exe
+dist
+web/docs

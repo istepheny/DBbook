@@ -1,0 +1,23 @@
+# {{.DataBase}}.{{.Table}}
+
+## Table
+
+|database|table|engine|comment|
+|---|---|---|---|
+|{{.DataBase}}|{{.Table}}|{{.Engine}}|{{.Comment}}|
+
+## Columns
+
+|column|type|default|comment|
+|---|---|---|---|
+{{- range $column := .Columns}}
+|{{$column.Name}}|{{$column.Type}}({{$column.Length}})|{{$column.Default}}|{{$column.Comment}}|
+{{- end}}
+
+## Indexes
+
+|index_name|index_column|type|
+|---|---|---|
+{{- range $index := .Indexes}}
+|{{$index.IndexName}}|{{$index.ColumnName}}|{{$index.Type}}|
+{{- end}}
