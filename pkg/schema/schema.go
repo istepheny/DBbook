@@ -4,6 +4,7 @@ import (
 	"dbbook/pkg/config"
 	"dbbook/pkg/database"
 	"dbbook/pkg/document"
+	"log"
 	"strings"
 	"xorm.io/core"
 )
@@ -28,7 +29,10 @@ func Query(configs []config.Database) (book document.Book) {
 
 func getTables(config config.Database) []*core.Table {
 	DB := database.Connect(config)
-	tables, _ := DB.DBMetas()
+	tables, e := DB.DBMetas()
+	if e != nil {
+		log.Fatal(e)
+	}
 	return tables
 }
 
