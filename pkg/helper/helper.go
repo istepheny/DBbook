@@ -21,8 +21,8 @@ func TemplatePath() string {
 	return strings.Join([]string{AppPath(), "web", "template", ""}, string(os.PathSeparator))
 }
 
-func DocsPath() string {
-	return strings.Join([]string{AppPath(), "web", "docs", ""}, string(os.PathSeparator))
+func BookPath() string {
+	return strings.Join([]string{AppPath(), "web", "dbbook", ""}, string(os.PathSeparator))
 }
 
 func Mkdir(dir string) {

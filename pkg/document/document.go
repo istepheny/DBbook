@@ -76,7 +76,7 @@ func renderReadMe() []byte {
 }
 
 func writeReadMe(readMeRendered []byte) {
-	readMePath := helper.DocsPath() + "README.md"
+	readMePath := helper.BookPath() + "README.md"
 	ioutil.WriteFile(readMePath, readMeRendered, 0644)
 }
 
@@ -109,7 +109,7 @@ func renderSidebar(sidebar Sidebar) []byte {
 }
 
 func writeSidebar(sidebarRendered []byte) {
-	sidebarPath := helper.DocsPath() + "_sidebar.md"
+	sidebarPath := helper.BookPath() + "_sidebar.md"
 
 	f, e := os.OpenFile(sidebarPath, os.O_APPEND|os.O_CREATE|os.O_WRONLY, 0644)
 	if e != nil {
@@ -136,13 +136,13 @@ func render(tmpl *template.Template, data interface{}) []byte {
 }
 
 func mkDocsDir() {
-	docsPath := helper.DocsPath()
+	docsPath := helper.BookPath()
 	_ = os.RemoveAll(docsPath)
 	helper.Mkdir(docsPath)
 }
 
 func mkDatabaseDir(databaseName string) string {
-	databaseDir := helper.DocsPath() + databaseName + string(os.PathSeparator)
+	databaseDir := helper.BookPath() + databaseName + string(os.PathSeparator)
 
 	helper.Mkdir(databaseDir)
 

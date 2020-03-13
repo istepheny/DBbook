@@ -4,4 +4,4 @@
 *.swap
 *.exe
 dist
-web/docs
+web/dbbook
