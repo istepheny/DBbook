@@ -33,10 +33,13 @@ Options:
         每 t 秒更新一次文档 (默认 3600)
 ```
 
+# 样例
+![dbbook](https://user-images.githubusercontent.com/19332324/76678390-6d743c00-6612-11ea-9d04-6e1564de919f.png)
+
 # 致谢
 
 - https://github.com/docsifyjs/docsify
-- https://github.com/go-xorm/xorm
+- https://gitea.com/xorm/xorm
 
 # 许可证
 

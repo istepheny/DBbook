@@ -33,10 +33,13 @@ Options:
         Update documentation every t seconds. (default 3600)
 ```
 
+# Showcase
+![dbbook](https://user-images.githubusercontent.com/19332324/76678390-6d743c00-6612-11ea-9d04-6e1564de919f.png)
+
 # Credits
 
 - https://github.com/docsifyjs/docsify
-- https://github.com/go-xorm/xorm
+- https://gitea.com/xorm/xorm
 
 # License
 
