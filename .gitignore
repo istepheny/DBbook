@@ -4,4 +4,5 @@
 *.swap
 *.exe
 dist
+database.json
 web/dbbook
