@@ -16,8 +16,8 @@
 
 ## Indexes
 
-|index_name|index_column|type|
+|column|name|type|
 |---|---|---|
 {{- range $index := .Indexes}}
-|{{$index.IndexName}}|{{$index.ColumnName}}|{{$index.Type}}|
+|{{$index.ColumnName}}|{{$index.IndexName}}|{{$index.Type}}|
 {{- end}}
