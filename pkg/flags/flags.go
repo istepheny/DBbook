@@ -33,7 +33,7 @@ func init() {
 
 func usage() {
 	fmt.Fprintf(os.Stderr,
-		`DBbook version: 0.1
+		`DBbook version: 1.0
 Usage: dbbook [-h] [-p port] [-t seconds]
 
 Options:

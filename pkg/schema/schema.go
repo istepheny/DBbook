@@ -7,6 +7,7 @@ import (
 	"log"
 	"strings"
 	"xorm.io/core"
+	"xorm.io/xorm/schemas"
 )
 
 var (
@@ -27,7 +28,7 @@ func Query(configs []config.Database) (book document.Book) {
 	return book
 }
 
-func getTables(config config.Database) []*core.Table {
+func getTables(config config.Database) []*schemas.Table {
 	DB := database.Connect(config)
 	tables, e := DB.DBMetas()
 	if e != nil {
@@ -36,7 +37,7 @@ func getTables(config config.Database) []*core.Table {
 	return tables
 }
 
-func parseTables(config config.Database, tables []*core.Table) (sidebar document.Sidebar, pages []document.Page) {
+func parseTables(config config.Database, tables []*schemas.Table) (sidebar document.Sidebar, pages []document.Page) {
 	sidebar.DataBase = config.Database
 	sidebar.CoverTable = tables[0].Name
 
@@ -49,7 +50,7 @@ func parseTables(config config.Database, tables []*core.Table) (sidebar document
 	return sidebar, pages
 }
 
-func parseTable(config config.Database, table *core.Table) (page document.Page) {
+func parseTable(config config.Database, table *schemas.Table) (page document.Page) {
 	page.DataBase = config.Database
 	page.Table = table.Name
 	page.Engine = table.StoreEngine

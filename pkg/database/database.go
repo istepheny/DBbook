@@ -4,9 +4,9 @@ import (
 	"dbbook/pkg/config"
 	"fmt"
 	_ "github.com/go-sql-driver/mysql"
-	"github.com/go-xorm/xorm"
 	"log"
 	"time"
+	"xorm.io/xorm"
 )
 
 func Connect(config config.Database) (DB *xorm.Engine) {
