@@ -10,7 +10,7 @@
 
 # 下载
 
-https://github.com/istepheny/dbbook/releases
+[https://github.com/istepheny/DBbook/releases](https://github.com/istepheny/DBbook/releases)
 
 # 配置
 
@@ -38,9 +38,9 @@ Options:
 
 # 致谢
 
-- https://github.com/docsifyjs/docsify
-- https://gitea.com/xorm/xorm
+- [https://github.com/docsifyjs/docsify](https://github.com/docsifyjs/docsify)
+- [https://gitea.com/xorm/xorm](https://gitea.com/xorm/xorm)
 
 # 许可证
 
-[MIT](https://github.com/istepheny/dbbook/blob/master/LICENSE)
+[MIT](https://github.com/istepheny/DBbook/blob/master/LICENSE)
