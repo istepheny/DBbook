@@ -18,7 +18,7 @@ func Connect(config config.Database) (DB *xorm.Engine) {
 		config.Host,
 		config.Port,
 		config.Database,
-		"utc",
+		"Local",
 	)
 
 	DB, e = xorm.NewEngine("mysql", dsn)
