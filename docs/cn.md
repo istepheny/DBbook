@@ -8,6 +8,9 @@
 - 🔎 全文搜索
 - ♻ 自动更新文档
 
+# 样例
+![dbbook](https://user-images.githubusercontent.com/19332324/76678390-6d743c00-6612-11ea-9d04-6e1564de919f.png)
+
 # 下载
 
 [https://github.com/istepheny/DBbook/releases](https://github.com/istepheny/DBbook/releases)
@@ -32,9 +35,6 @@ Options:
   -t seconds
         每 t 秒更新一次文档 (默认 3600)
 ```
-
-# 样例
-![dbbook](https://user-images.githubusercontent.com/19332324/76678390-6d743c00-6612-11ea-9d04-6e1564de919f.png)
 
 # 致谢
 

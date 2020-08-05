@@ -8,6 +8,9 @@
 - 🔎 Full text search
 - ♻ Automatically update your documentation
 
+# Showcase
+![dbbook](https://user-images.githubusercontent.com/19332324/76678390-6d743c00-6612-11ea-9d04-6e1564de919f.png)
+
 # Download
 
 [https://github.com/istepheny/DBbook/releases](https://github.com/istepheny/DBbook/releases)
@@ -32,9 +35,6 @@ Options:
   -t seconds
         Update documentation every t seconds. (default 3600)
 ```
-
-# Showcase
-![dbbook](https://user-images.githubusercontent.com/19332324/76678390-6d743c00-6612-11ea-9d04-6e1564de919f.png)
 
 # Credits
 
