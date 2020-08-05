@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.1](https://github.com/istepheny/DBbook/compare/v1.0.0...v1.0.1) (2020-08-05)
+
+
+### Bug Fixes
+
+* add flag -h listening host ([7f8480e](https://github.com/istepheny/DBbook/commit/7f8480ef0b31561f2d3cf15e5a4005799094408e))
+
 ## 1.0.0 (2020-03-17)
 
 
