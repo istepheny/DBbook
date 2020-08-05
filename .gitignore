@@ -1,8 +1,9 @@
+*.exe
+*.swap
+.DS_Store
 .idea
 .vscode
-.DS_Store
-*.swap
-*.exe
-dist
 database.json
+dbbook
+dist
 web/dbbook
