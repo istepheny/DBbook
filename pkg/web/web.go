@@ -16,7 +16,7 @@ func Serve() {
 
 	helper.RunningLog()
 
-	e := http.ListenAndServe(":"+flags.Port, fileServer)
+	e := http.ListenAndServe(flags.Host+":"+flags.Port, fileServer)
 
 	if e != nil {
 		log.Fatalf("Failed to start service: %s", e)

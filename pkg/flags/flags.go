@@ -7,12 +7,15 @@ import (
 )
 
 var (
-	Help   bool
+	Host   string
 	Port   string
 	Ticker int64
+	Help   bool
 )
 
 func init() {
+	flag.StringVar(&Host, "h", "0.0.0.0", "Listening `host`.")
+
 	flag.StringVar(&Port, "p", "3000", "Listening `port`.")
 
 	flag.Int64Var(&Ticker, "t", 3600, "Update documentation every t `seconds`.")
@@ -20,7 +23,7 @@ func init() {
 		Ticker = 1
 	}
 
-	flag.BoolVar(&Help, "h", false, "Show this help.")
+	flag.BoolVar(&Help, "v", false, "Show this help.")
 
 	flag.Usage = usage
 
@@ -33,8 +36,8 @@ func init() {
 
 func usage() {
 	fmt.Fprintf(os.Stderr,
-		`DBbook version: 1.0.0
-Usage: dbbook [-h] [-p port] [-t seconds]
+		`DBbook version: 1.0.1
+Usage: dbbook [-h host] [-p port] [-t seconds] [-v]
 
 Options:
 `)
