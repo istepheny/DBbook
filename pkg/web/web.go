@@ -1,22 +1,21 @@
 package web
 
 import (
-	"dbbook/pkg/flags"
-	"dbbook/pkg/helper"
+	"dbbook/pkg/config"
 	"log"
 	"net/http"
 	"path/filepath"
 )
 
-func Serve() {
+func Serve(s config.Server) {
 
 	appPath, _ := filepath.Abs(".")
 
 	fileServer := http.FileServer(http.Dir(appPath + "/web"))
 
-	helper.RunningLog()
+	log.Printf("DBbook is running at: http://%s:%s\n", s.Host, s.Port)
 
-	e := http.ListenAndServe(flags.Host+":"+flags.Port, fileServer)
+	e := http.ListenAndServe(s.Host+":"+s.Port, fileServer)
 
 	if e != nil {
 		log.Fatalf("Failed to start service: %s", e)

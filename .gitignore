@@ -3,7 +3,7 @@
 .DS_Store
 .idea
 .vscode
-database.json
+config.json
 dbbook
 dist
 web/dbbook

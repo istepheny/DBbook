@@ -32,7 +32,7 @@ func getTables(config config.Database) []*schemas.Table {
 	DB := database.Connect(config)
 	tables, e := DB.DBMetas()
 	if e != nil {
-		log.Fatal(e)
+		log.Fatalf("Failed to connect to database: %s", e)
 	}
 	return tables
 }

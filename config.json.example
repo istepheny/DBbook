@@ -1,0 +1,23 @@
+{
+  "ticker": 3600,
+  "server": {
+    "host": "127.0.0.1",
+    "port": "3000"
+  },
+  "databases": [
+    {
+      "host": "127.0.0.1",
+      "port": "3306",
+      "database": "one",
+      "username": "username",
+      "password": "password"
+    },
+    {
+      "host": "127.0.0.1",
+      "port": "3306",
+      "database": "two",
+      "username": "username",
+      "password": "password"
+    }
+  ]
+}

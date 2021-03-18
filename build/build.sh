@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+set -euo pipefail
+
 # Usage:
 # ./build/build.sh 1.0
 
@@ -25,7 +27,7 @@ fi
 
 mkdir -p ${DIST_DIR}
 
-CONFIG_NAME="database.json"
+CONFIG_NAME="config.json"
 
 CONFIG_PATH="${SOURCE_DIR}/${CONFIG_NAME}.example"
 

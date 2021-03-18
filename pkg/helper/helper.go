@@ -1,7 +1,6 @@
 package helper
 
 import (
-	"dbbook/pkg/flags"
 	"log"
 	"os"
 	"path/filepath"
@@ -15,7 +14,7 @@ func AppPath() string {
 }
 
 func ConfigFilePath() string {
-	return strings.Join([]string{AppPath(), "database.json"}, string(os.PathSeparator))
+	return strings.Join([]string{AppPath(), "config.json"}, string(os.PathSeparator))
 }
 
 func TemplatePath() string {
@@ -33,10 +32,4 @@ func Mkdir(dir string) {
 			log.Fatal(e)
 		}
 	}
-}
-
-func RunningLog() {
-	format := "DBbook is running at: http://%s:%s\n"
-
-	log.Printf(format, flags.Host, flags.Port)
 }
