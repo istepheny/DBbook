@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.1.0](https://github.com/istepheny/DBbook/compare/v1.0.1...v1.1.0) (2021-03-18)
+
+
+### Features
+
+* use config.json rather than flags ([09df165](https://github.com/istepheny/DBbook/commit/09df16558b1d9a4da3aae6401bf115c8cfe949db))
+
 ### [1.0.1](https://github.com/istepheny/DBbook/compare/v1.0.0...v1.0.1) (2020-08-05)
 
 
