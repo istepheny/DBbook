@@ -17,23 +17,11 @@
 
 # Configuration
 
-Open `database.json` and put in your database configuration.
+Open `config.json` and put in your database configuration.
 
 # Run and enjoy
 ```
 $ ./dbbook
-```
-
-# Command Usage
-```
-Usage: dbbook [-h] [-p port] [-t seconds]
-
-Options:
-  -h    Show this help.
-  -p port
-        Listening port. (default "3000")
-  -t seconds
-        Update documentation every t seconds. (default 3600)
 ```
 
 # Credits

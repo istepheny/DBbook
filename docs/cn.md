@@ -17,23 +17,11 @@
 
 # 配置
 
-打开 `database.json` 填入数据库配置信息。
+打开 `config.json` 填入数据库配置信息。
 
 # 运行
 ```
 $ ./dbbook
-```
-
-# 命令行参数
-```
-Usage: dbbook [-h] [-p port] [-t seconds]
-
-Options:
-  -h    显示帮助信息
-  -p port
-        监听端口 (默认 "3000")
-  -t seconds
-        每 t 秒更新一次文档 (默认 3600)
 ```
 
 # 致谢
